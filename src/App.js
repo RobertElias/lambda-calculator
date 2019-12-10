@@ -27,6 +27,7 @@ function App() {
 
   let specialClickHandler = (buttonName) => {
     console.log(buttonName)
+    setDisplay(buttonName)
   }
 
 

@@ -22,31 +22,31 @@ In this project you will build out a calculator using React. You have been given
 
 This project was put together using create-react-app (CRA). You will not need to install CRA in order to make this project work. Follow the steps below to setup the project with the proper dependencies.
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your team lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository in your terminal
-- [ ] CD into the project base directory `cd lambda-calculator`
-- [ ] Download project dependencies by running one of these two commands `yarn` or `npm install`
-- [ ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [X] Create a forked copy of this project.
+- [X] Add your team lead as collaborator on Github.
+- [X] Clone your OWN version of the repository in your terminal
+- [X] CD into the project base directory `cd lambda-calculator`
+- [X] Download project dependencies by running one of these two commands `yarn` or `npm install`
+- [X] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
+- [X] Create a new branch: git checkout -b `<firstName-lastName>`.
       Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [X] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge Branch into master (student's Repository). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master.
-- [ ] Do your magic!
+- [X] Submit a Pull-Request to merge Branch into master (student's Repository). **Please don't merge your own pull request**
+- [X] Add your team lead as a reviewer on the pull-request
+- [X] Your team lead will count the project as complete by merging the branch back into master.
+- [X] Do your magic!
 
 # _Project - Lambda Calculator_
 
 **A job just came down from the Big Boss!**
 
-- [ ] A prospective client has tasked you with building a calculator app. They need you to build the app using the file structure and component wire frame provided.
-- [ ] Get all necessary files connected and either taking in or sending out data.
-- [ ] The design file should be followed as close as possible but doesn't have to be pixel perfect - budget your time wisely.
-- [ ] The client will provide their own proprietary calculator software so your app only needs basic functionality, enough for a demo.
+- [X] A prospective client has tasked you with building a calculator app. They need you to build the app using the file structure and component wire frame provided.
+- [X] Get all necessary files connected and either taking in or sending out data.
+- [X] The design file should be followed as close as possible but doesn't have to be pixel perfect - budget your time wisely.
+- [X] The client will provide their own proprietary calculator software so your app only needs basic functionality, enough for a demo.
 
 ## Directions
 
@@ -54,9 +54,9 @@ Using the design file, build out your User Interface. Before you start, look thr
 
 **STEP 1**
 
-- [ ] You have been given a Data.js file that contains some arrays.
-- [ ] Find a way to bring (import) the data into the necessary files, but do not change the data.
-- [ ] Data should be imported into the wrapper components (`Numbers`, `Operators`, and `Specials`)
+- [X] You have been given a Data.js file that contains some arrays.
+- [X] Find a way to bring (import) the data into the necessary files, but do not change the data.
+- [X] Data should be imported into the wrapper components (`Numbers`, `Operators`, and `Specials`)
 
 **Step 2**
 Add the data to state like this:
