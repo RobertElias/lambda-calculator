@@ -44,7 +44,22 @@ function App() {
             clickHandler={specialClickHandler}
           />
         </>
-        )}else{
+        )}else if(i===10) {
+           return (
+            <>
+          <NumberButton 
+            buttonName={x}
+            clickHandler={specialClickHandler}
+          />
+          <OperatorButton
+          buttonName={data.operators[operatorIndex++].char}
+          clickHandler={specialClickHandler}
+          />
+        </>  
+
+          )
+
+        }{
           return (
             <NumberButton 
                buttonName={x}
