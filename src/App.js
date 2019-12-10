@@ -4,6 +4,8 @@ import React, {useState} from "react";
 
 import Display from './components/DisplayComponents/Display'
 import Logo from "./components/DisplayComponents/Logo";
+import NumberButton  from './components/ButtonComponents/NumberButtons/NumberButton'
+import OperatorButton from './components/ButtonComponents/OperatorButtons/OperatorButton'
 import SpecialButton from './components/ButtonComponents/SpecialButtons/SpecialButton'
 import data from './data.js'
 
@@ -46,6 +48,22 @@ function App() {
             )
           })
         }
+        
+        <OperatorButton
+        buttonName={data.operators[0].char}
+        clickHandler={specialClickHandler}
+        />
+        {
+          data.numbers.map((x, i) => {
+            return (
+              <NumberButton 
+              buttonName={x}
+              clickHandler={specialClickHandler}
+              />
+            )
+          })
+        }
+        
         </section>
       </div>
     </div>
