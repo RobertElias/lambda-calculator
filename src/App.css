@@ -20,3 +20,10 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+  .button {
+    width: 25%;
+}
+
+.button-zero {
+    width: 50%;
+}

@@ -1,3 +1,5 @@
+/* eslint-disable no-lone-blocks */
+
 import "./App.css";
 
 import React, {useState} from "react";
@@ -18,27 +20,49 @@ import data from './data.js'
 
 function App() {
   console.log(data);
-  // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
-  // Once the state hooks are in place write some functions to hold data in state and update that data depending on what it needs to be doing
-  // Your functions should accept a parameter of the the item data being displayed to the DOM (ie - should recieve 5 if the user clicks on
-  // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
-  // Don't forget to pass the functions (and any additional data needed) to the components as props
+  
   const [display, setDisplay] = useState(0);
 
   let specialClickHandler = (buttonName) => {
     console.log(buttonName)
     setDisplay(buttonName)
   }
+  let operatorIndex = 0;
+  let buttonDisplayHell = (x, i) => {
+    console.log(x)
+  
+    {
+      if(i === 0 || i===3 || i===6 || i===9){
+      return (
+        <>
+          <OperatorButton
+          buttonName={data.operators[operatorIndex++].char}
+          clickHandler={specialClickHandler}
+          />
+          <NumberButton 
+            buttonName={x}
+            clickHandler={specialClickHandler}
+          />
+        </>
+        )}else{
+          return (
+            <NumberButton 
+               buttonName={x}
+               clickHandler={specialClickHandler}
+            />
+          )
+       }
+     }
+  }
 
-
-  return (
+return (
     <div className="container">
       <Logo />
       <div className="App">
         <Display
         display = {display}
         />
-        <section>
+        <section className="buttonContainer">
         {
           data.specials.map(x=>{
             return (
@@ -49,22 +73,12 @@ function App() {
             )
           })
         }
-        
-        <OperatorButton
-        buttonName={data.operators[0].char}
-        clickHandler={specialClickHandler}
-        />
         {
           data.numbers.map((x, i) => {
-            return (
-              <NumberButton 
-              buttonName={x}
-              clickHandler={specialClickHandler}
-              />
-            )
+            console.log(i)
+            return buttonDisplayHell(x,i)
           })
         }
-        
         </section>
       </div>
     </div>
