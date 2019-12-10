@@ -2,7 +2,14 @@ import React from "react";
 
 const SpecialButton = (props) => {
   return (
-    <button>{props.buttonName}</button>
+    <button
+    className="button"
+    onClick={
+      ()=>
+      props.clickHandler(props.buttonName)
+    }
+    >
+    {props.buttonName}</button>
    
   );
 };
