@@ -11,13 +11,6 @@ import OperatorButton from './components/ButtonComponents/OperatorButtons/Operat
 import SpecialButton from './components/ButtonComponents/SpecialButtons/SpecialButton'
 import data from './data.js'
 
-// STEP 4 - import the button and display components
-// Don't forget to import any extra css/scss files you build into the correct component
-
-// Logo has already been provided for you. Do the same for the remaining compoanents
-
-
-
 function App() {
   console.log(data);
   
@@ -29,7 +22,7 @@ function App() {
   }
   let operatorIndex = 0;
   let buttonDisplayHell = (x, i) => {
-    console.log(x)
+    //console.log(x)
   
     {
       if(i === 0 || i===3 || i===6 || i===9){
